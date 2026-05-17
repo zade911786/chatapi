@@ -162,10 +162,9 @@ export async function handleRequest(req, res, prefix) {
       completed_at:  new Date().toISOString(),
     },
     meta: {
-      api_provider:  "FreeTheAI (freetheai.xyz)",
-      api_base:      "https://api.freetheai.xyz/v1",
-      valid_models:  validModels,
-      upstream_id:   data?.id ?? null,
+      created_by:   "Zade",
+      owner:        OWNER,
+      valid_models: validModels,
     },
   });
 }
